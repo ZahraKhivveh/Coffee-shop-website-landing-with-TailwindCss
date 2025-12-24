@@ -3,4 +3,13 @@
 @theme{
     --color-mary : #f2f ;
     --text-22: 120px;
+    --font-drift :"Drift";
+    --spacing-pp: 24px;
+}
+@font-face {
+    font-family: "Drift";
+    src: url('./font/Drift.woff2') format("woff2");
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
 }
