@@ -1,15 +1,66 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 @theme{
-    --color-mary : #f2f ;
-    --text-22: 120px;
-    --font-drift :"Drift";
-    --spacing-pp: 24px;
+    --color-brn100 : #ECE0D1 ;
+    --color-brn300 : #DBC1AC ;
+    --color-brn600 : #967259 ;
+    --color-brn900 : #634832 ;
+
+    --shadow-normal : 0px 1px 10px rgba (0, 0, 0,.05);
+
+    --radius-4xl :2rem;
+
+    
+
+    --font-DanaBold :"Dana-Bold";
+    --font-DanaMedium :"Dana-Medium";
+    --font-DanaRegular :"Dana-Regular";
+    --font-MorabbaBold :"Morabba-Bold";
+    --font-MorabbaLight :"Morabba-Light";
+    --font-MorabbaMedium :"Morabba-Medium";
+
+    --tracking-tightest : -0.065em;
+    
+}
+@utility container{
+    @apply mx-auto px-4 lg:px-2.5 ;
+}
+@layer utilities{
+
 }
 @font-face {
-    font-family: "Drift";
-    src: url('./font/Drift.woff2') format("woff2");
-    font-style: normal;
-    font-weight: 100 900;
+    font-family: "Dana-Bold";
+    src:local("Dana-Bold"), url("./font/Dana/woff2/Dana-Bold.woff2") format("woff2");
     font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Dana-Medium";
+    src:local("Dana-medium"), url('./font/Dana/woff2/Dana-Medium.woff2') format("woff2");
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Dana-Regular";
+    src: url('./font/Dana/woff2/Dana-Regular.woff2') format("woff2");
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Morabba-Bold";
+    src: url('./font/Morabba/woff2/Morabba-Bold.woff2') format("woff2");
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Morabba-Light";
+    src: url('./font/Morabba/woff2/Morabba-Light.woff2') format("woff2");
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Morabba-Medium";
+    src: url('./font/Morabba/woff2/Morabba-Medium.woff2') format("woff2");
+    font-display: swap;
+    font-style: normal;
 }
