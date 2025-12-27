@@ -6,11 +6,9 @@
     --color-brn600 : #967259 ;
     --color-brn900 : #634832 ;
 
-    --shadow-normal : 0px 1px 10px rgba (0, 0, 0,.05);
+    --shadow-normal : 0px 1px 10px (0, 0, 0,.05);
 
     --radius-4xl :2rem; 
-
-    
 
     --font-Poppins :"Dosis-ExtraBold";
     --font-DanaBold :"Dana-Bold";
@@ -20,15 +18,16 @@
     --font-MorabbaLight :"Morabba-Light";
     --font-MorabbaMedium :"Morabba-Medium";
 
-     --tracking-tightest : -0.065em;
+    --tracking-tightest : -0.065em;
     --breakpoint-xs: 480px;
-    
 }
 @utility container{
-    @apply mx-auto px-4 lg:px-2.5 ;
+    @apply mx-auto px-4 lg:px-2.5;
 }
 @layer utilities{
-
+.bg-home-mobile{
+    background-image: url() ;
+}
 }
 @layer utilities {
   .ltr {
