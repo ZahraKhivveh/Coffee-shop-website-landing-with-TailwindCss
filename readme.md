@@ -1,4 +1,8 @@
 # ☕️ Coffee Shop Landing Page | Tailwind CSS
+---
+![img](./public/images/24_Header-Analyze/headerBgDesktop.png)
+---
+
 
 A modern, responsive coffee shop landing page built using Tailwind CSS.  
 This project is designed to work seamlessly across desktop, tablet, and mobile devices, focusing on clean UI, accessibility, and performance.
