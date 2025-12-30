@@ -8,22 +8,24 @@
     <link rel="shortcut icon" href="./images/24_Header-Analyze/fav-icon.png" type="image/x-icon">
 </head>
 <body class="bg-body-light dark:bg-body-dark">
+
     <!-- Background -->
     <img class="w-full bg-no-repeat" src="../public/images/24_Header-Analyze/headerBgDesktop.png" alt="main">
     <!-- LOGO & MENU -->
-     <header class="fixed top-9 left-0 right-0 flex items-center tracking-tightest bg-black/50 w-[90%] h-24 mx-auto px-10 py-5  rounded-3xl backdrop-blur-b6">
+     <header class="fixed top-9 left-0 right-0 hidden md:flex items-center tracking-tightest bg-black/50 w-[98%] lg:w-[90%] h-24 mx-auto px-5 lg:px-10 py-5  rounded-3xl backdrop-blur-b6">
       <div class="flex w-full items-center justify-between">
-        <nav class="flex items-center gap-x-9 ">
-            <div>
-                <img class="w-12 h-12" src="./images/24_Header-Analyze/app-logo.png" alt="logo"></div>
+        <nav class="flex items-center gap-x-3 lg:gap-x-9 ">
+            <div class="shrink-0">
+                <img class="w-12 h-12" src="./images/24_Header-Analyze/app-logo.png" alt="logo">
+            </div>
                 
                 <!-- Menu -->
-                <ul class="flex gap-x-9 text-2xl font-DanaMedium text-gray-300 ">
+                <ul class="flex gap-x-3 lg:gap-x-9 text-xl lg:text-2xl font-DanaMedium text-gray-300 ">
 
                 <li class="hover:text-orange-300 transition-colors"><a href="#">صفحه اصلی</a></li>
-                <li class="relative group hover:text-orange-300"><a href="#">فروشگاه</a>
+                <li class="relative group hover:text-orange-300 "><a href="#">فروشگاه</a>
                     <!-- Sub menu -->
-                <div class="absolute transition-all opacity-0 invisible group-hover:visible group-hover:opacity-100 w-52 top-full tracking-normal shadow-normal p-6 space-y-4 rounded-2xl bg-white font-DanaMedium text-2 border-t-[4px] text-zinc-700 border-t-orange-300 dark:bg-zinc-700 dark:text-white">
+                <div class="absolute delay-75 transition-all opacity-0 invisible group-hover:visible group-hover:opacity-100 w-52 top-full tracking-normal shadow-normal p-6 space-y-4 rounded-2xl bg-white font-DanaMedium text-2 border-t-[4px] text-zinc-700 border-t-orange-300 dark:bg-zinc-700 dark:text-white">
                       <a class="inline-block  hover:text-orange-300" href="#">قهوه ویژه</a>
                       <a class="inline-block  hover:text-orange-300" href="#">قهوه در سطح جهانی</a> 
                       <a class="inline-block  hover:text-orange-300" href="#">قهوه درجه یک</a>
@@ -40,7 +42,7 @@
         </nav>
         <!-- LOG & THEME & BASKET -->
         
-        <div class="flex gap-x-10 text-orange-200">
+        <div class="flex gap-x-4 lg:gap-x-10 text-orange-200">
             <div class="flex items-center gap-x-5">
             <div class="relative group">
                 <!-- Basket -->
@@ -49,13 +51,13 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
                       </svg>
                       <div class=" absolute top-full opacity-0 invisible group-hover:opacity-100 
-                      group-hover:visible 
-                        w-100 p-5 bg-white dark:bg-zinc-700 left-0 border-t-2 border-t-orange-300
+                      group-hover:visible delay-75
+                        w-100  p-5 bg-white dark:bg-zinc-700 left-0 border-t-3 border-t-orange-300
                        tracking-normal transition-all  shadow-normal space-y-4 rounded-2xl 
-                       font-DanaMedium text-zinc-700 dark:text-white h-100">
+                       font-DanaMedium text-zinc-700 dark:text-white max-h-150 overflow-auto ">
                        <!--  محتویات داخل سبد خرید بخش اول-->
                        <div class="flex justify-between items-center">
-                           <span class="text-gray-400 tracking-tightest font-DanaMedium text-3">1 مورد</span>
+                           <span class="text-gray-400 tracking-tightest  font-DanaMedium text-3">1 مورد</span>
                            <div class=" flex tracking-tightest font-DanaMedium text-3 text-orange-300">
                                <a class="" href="#">مشاهده سبد خرید</a>
                                
@@ -66,18 +68,100 @@
                                 </div>
                             </div>
                         </div>
-                        <!--  محتویات داخل سبد خرید بخش دوم-->
-                          <div>
-                            <div>
-                                <img src="" alt="">
-                            </div>
+                        <!-- ظرف کلی سبد خرید -->
+                         <div class="divide-y divide-gray-200 dark:divide-white/10 p-6 border-b border-b-gray-300 dark:border-b-white/10">
+                             <!--  ردیف اول سبد خرید-->
+                               <div class="py-5 flex gap-x-2.5 ">
+                                 <div>
+                                     <img class="w-45 h-25" src="../public/images/products/p2.png" alt="img-p2">
+                                 </div>
+     
+                                 <div class="flex-col justify-between">
+                                     <h4 class=" line-clamp-2font-DanaMedium tracking-tightest text-xl text-zinc-700 dark:text-white">قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
+                                     
+                                     <br>
+                                     <div>
+                                         <span class="text-teal-600 dark:text-emerald-500 text-x"> 14500 تومان تخفیف</span>
+                                         <div class="text-zinc-700 text-3xl dark:text-white font-DanaBold">
+                                             175,000<span class=" text-xl">تومان</span>
+                                         </div>
+                                         
+                                     </div>
+                                     
+                                 </div>
+                               </div>
+                               
+                               <!-- 1ردیف دوم سبد خرید -->
+                               <div class="py-5 flex gap-x-2.5 ">
+                                   <div>
 
+                                     <img class="w-45 h-25" src="../public/images/products/p3.png" alt="img-p3">
+                                 </div>
+                                 <div class="flex-col justify-between">
+                                     <h4 class="line-clamp-2 font-DanaMedium tracking-tightest text-xl text-zinc-700 dark:text-white">قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
+                                
+                                     <br>
+                                     <div>
+                                         <span class="text-teal-600 dark:text-emerald-500 text-x"> 14500 تومان تخفیف</span>
+                                         <div class="text-zinc-700 text-3xl dark:text-white font-DanaBold">
+                                             175,000<span class=" text-xl">تومان</span>
+                                         </div>
+                                         
+                                     </div>
+                                     
+                                 </div>
+                               </div>
+
+                               <div class="py-5 flex gap-x-2.5 ">
+                                 <div>
+                                     <img class="w-45 h-25" src="../public/images/products/p4.png" alt="img-p4">
+                                 </div>
+                                 <div class="flex-col justify-between">
+                                     <h4 class="line-clamp-2 font-DanaMedium tracking-tightest text-xl text-zinc-700 dark:text-white">قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
+                                
+                                     <br>
+                                     <div>
+                                         <span class="text-teal-600 dark:text-emerald-500 text-x"> 14500 تومان تخفیف</span>
+                                         <div class="text-zinc-700 text-3xl dark:text-white font-DanaBold">
+                                             175,000<span class=" text-xl">تومان</span>
+                                         </div>
+                                         
+                                     </div>
+                                     
+                                 </div>
+                               </div>
+                               <div class="py-5 flex gap-x-2.5 ">
+                                 <div>
+                                     <img class="w-45 h-25" src="../public/images/products/p1.png" alt="img-p1">
+                                 </div>
+                                 <div class="flex-col justify-between">
+                                     <h4 class="line-clamp-2 font-DanaMedium tracking-tightest text-xl text-zinc-700 dark:text-white">قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
+                                
+                                     <br>
+                                     <div>
+                                         <span class="text-teal-600 dark:text-emerald-500 text-x"> 14500 تومان تخفیف</span>
+                                         <div class="text-zinc-700 text-3xl dark:text-white font-DanaBold">
+                                             175,000<span class=" text-xl">تومان</span>
+                                         </div>
+                                         
+                                     </div>
+                                     
+                                 </div>
+                               </div>
+                         </div>
+                         <div class="flex justify-between mt-5">
                             <div>
-                                <h6></h6>
-                                <span></span>
-                                <h4></h4>
-                            </div>
-                          </div>
+                                         <span class="text-gray-300 text-xs font-DanaMedium">مبلغ قابل پرداخت</span>
+                                         <div class="text-zinc-700 text-3xl dark:text-white font-DanaBold">
+                                             700,000<span class=" text-xl">تومان</span>
+                                         </div>
+                                         
+                                     </div>
+
+                            <a class="w-30 h-14 flex items-center justify-center bg-teal-600 dark:bg-emerald-500 dark:hover:bg-emerald-600
+                             hover:bg-teal-700 transition-colors rounded-xl font-DanaMedium text-xl text-white" href="#">ثبت سفارش</a>
+                         </div>
+                            
 
                           
                       </div>
@@ -106,13 +190,10 @@
   <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15m-3 0-3-3m0 0 3-3m-3 3H15" />
 </svg>
 
-                <span class="text-2xl font-DanaMedium">ورود | ثبت نام</span></a>
+                <span class="text-2xl font-DanaMedium hidden xl:inline-block">ورود | ثبت نام</span></a>
         
     </header>
     
-    <main> </main>
-    
-    <footer></footer>
     
     
     
