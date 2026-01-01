@@ -24,20 +24,16 @@
     --blur-b6 : 6px ;
     --breakpoint-xs: 480px; 
     --radius-4xl :2rem; 
-    /*@counter-variant child {
-        &>*{
-            @variant-content;
-        }
-    } */
+
 }
- @utility container{
+ /*@utility container{
     @apply mx-auto px-4 lg:px-2.5;
 }
 @layer utilities{
 .bg-home-mobile{
     background-image: url("../public/images/24_Header-Analyze/headerBgDesktop.png") ;
 } 
-}
+}*/
 @layer utilities {
   .ltr {
     direction: ltr;
@@ -79,7 +75,7 @@
     src: url("../public/font/Morabba/woff2/Morabba-Bold.woff2") format("woff2");
     font-display: swap;
     font-style: normal;
-    font-weight: 200 700;
+    font-weight: 700;
 }
 @font-face {
     font-family: "Morabba-Light";
