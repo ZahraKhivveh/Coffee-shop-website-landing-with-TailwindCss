@@ -28,12 +28,16 @@
 }
  /*@utility container{
     @apply mx-auto px-4 lg:px-2.5;
-}
+}*/
 @layer utilities{
 .bg-home-mobile{
-    background-image: url("../public/images/24_Header-Analyze/headerBgDesktop.png") ;
-} 
-}*/
+    background-image: url("../public/images/CoffeeShop-Files/headerBgMobile.webp") ;
+} }
+@layer utilities{
+.bg-home-desktop{
+    background-image: url("../public/images/CoffeeShop-Files/headerBgDesktop.webp") ;
+}
+}
 @layer utilities {
   .ltr {
     direction: ltr;

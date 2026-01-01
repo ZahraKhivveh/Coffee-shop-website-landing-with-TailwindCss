@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="output.css">
     <link rel="shortcut icon" href="./images/24_Header-Analyze/fav-icon.png" type="image/x-icon">
 </head>
-<body class="bg-body-light dark:bg-body-dark">
+<body class="bg-body-light dark:bg-body-dark ">
 
     <!-- Background -->
     <!-- LOGO & MENU -->
-    <img class="w-full bg-no-repeat" src="../public/images/24_Header-Analyze/headerBgDesktop.png" alt="main">
-    <header class="fixed top-9 left-0 right-0 hidden md:flex items-center tracking-tightest bg-black/50 w-[98%] lg:w-[90%] h-24 mx-auto px-5 lg:px-10 py-5  rounded-3xl backdrop-blur-b6">
-        <div class="flex w-full items-center justify-between">
+    <header class=" fixed top-9 left-0 right-0 hidden md:flex items-center tracking-tightest bg-black/50 w-[98%] lg:w-[90%] h-24 mx-auto px-5 lg:px-10 py-5  rounded-3xl backdrop-blur-b6">
+        
+        <div class="flex  w-full items-center justify-between z-10">
+            <!-- <img class=" w-full z-0 bg-no-repeat" src="../public/images/24_Header-Analyze/headerBgDesktop.png" alt="main"> -->
         <nav class="flex items-center gap-x-3 lg:gap-x-9 ">
             <div class="shrink-0">
                 <img class="w-12 h-12" src="./images/24_Header-Analyze/app-logo.png" alt="logo">
@@ -40,8 +41,6 @@
                 <li class="hover:text-orange-300"><a href="#">تماس با ما</a></li>
             </ul>
         </nav>
-        <!-- LOG & THEME & BASKET -->
-        
         <div class="flex gap-x-4 lg:gap-x-10 text-orange-200">
             <div class="flex items-center gap-x-5">
             <div class="relative group">
@@ -182,6 +181,8 @@
                 </div>
             </div>
             </div>
+        <!-- LOG & THEME & BASKET -->
+        
             <!-- | -->
              <span class="block w-px h-14 bg-white/30"></span>
         
@@ -189,10 +190,11 @@
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10 rotate-180">
   <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15m-3 0-3-3m0 0 3-3m-3 3H15" />
 </svg>
+<span class="text-2xl font-DanaMedium hidden xl:inline-block">ورود | ثبت نام</span></a>
+</header>
 
-                <span class="text-2xl font-DanaMedium hidden xl:inline-block">ورود | ثبت نام</span></a>
         
-    </header>
+                
 
     <!-- ایجاد منوی موبایل ------------------------------------->
 
@@ -229,9 +231,9 @@
              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
             </svg>
 
-
         </div>
         <!-- بخش وسطی ساید بار -->
+        <div class="bg-home-mobile"></div>
     <ul class="flex flex-col items-start gap-6  font-DanaMedium text-6 border-b border-b-gray-300 dark:border-b-white/40 pb-8 mt-8">
         
         <li>
@@ -419,19 +421,24 @@
         </div>
     </div>
         </div>
+</div>
+</div>
+
         <!-- بخش مین مرکزی سایت --------------------------------------------------------------->
-         <main>
-            <section class="home">
-                <div class="container">
-                    <div class="text-white">
-                        <h1 class="font-MorabbaBold md:text-6xl ">قهوه عربیکا تانزانیا</h1>
+
+        <main class="">
+            <section class="home ">
+                <div class="container min-h-screen  flex flex-col items-end">
+                    <div class="text-white ">
+                        <h1 class="font-MorabbaBold text-2xl mb-2 md:text-6xl ">قهوه عربیکا تانزانیا</h1>
                         <p class="font-MorabbaLight text-xl md:text-5xl">یک فنجان بالانس !</p>
-                        <span class="block w-25 h-px md:h-0.5 bg-orange-300"></span>
-                        <p class="font-MorabbaLight text-xl md:text-2xl">قطعا نام آشنای عربیکا را شنیده اید، عربیکا یکی از گونه های قهوه است که در نواحی مختلف کمربند قهوه کشت میشود.</p>
+                        <span class="block w-25 h-px md:h-0.5 bg-orange-300 md:my-8 my-4"></span>
+                        <p class="md:max-w-115 font-DanaMedium text-xl md:text-2xl">قطعا نام آشنای عربیکا را شنیده اید، عربیکا یکی از گونه های قهوه است که در نواحی مختلف کمربند قهوه کشت میشود.</p>
                     </div>
                 </div>
             </section>
          </main>
+         
                                          
 
 
@@ -443,7 +450,7 @@
     
     
     <!-- ZAHRA KHIVVEH -->
-    <!-- <div class=" min-h-screen flex justify-center items-center shadow-lg">
+    <!-- <div><div class=" min-h-screen flex justify-center items-center shadow-lg">
         <div class=" max-w-100 overflow-hidden rounded-2xl shadow-md">
             <img src="./images/24_Header-Analyze/photo_2025-11-23_01-32-13.jpg" alt="aa">
             <div class="p-5 space-y-3">
@@ -454,13 +461,13 @@
                   <a href="https://github.com/ZahraKhivveh">Read me</a>
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
               </div>
+            </div>
+        </div>
+    </div></div> -->
+              
                 
-            
-        </div>
-        </div>
       
-    </div> -->
-    <div class="invisible opacity-0 md:hidden overlay fixed bg-black/40 w-full h-full z-10 inset-0"></div>
+    <!-- <div class="invisible opacity-0 md:hidden overlay fixed bg-black/40 w-full h-full z-10 inset-0"></div> -->
 <script src="../public/app.js"></script>
 </body>
 </html>
