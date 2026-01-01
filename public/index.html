@@ -193,6 +193,7 @@
                 <span class="text-2xl font-DanaMedium hidden xl:inline-block">ورود | ثبت نام</span></a>
         
     </header>
+
     <!-- ایجاد منوی موبایل ------------------------------------->
 
     <!-- منوی بار موبایل ------------->
@@ -360,6 +361,68 @@
 
 
      </div>
+
+     <!-- منوی سبد خرید موبایل ----------------------------------->
+      <div class="fixed w-64 min-h-screen px-4 bg-white dark:bg-zinc-700 top-0 left-0 bottom-0 z-20 transition-all overflow-y-auto">
+
+        <!-- بخش بالایی سبد خرید -------->
+         <div class="flex items-center justify-between font-DanaBold mt-5 text-5 text-zinc-600 dark:text-white border-b border-b-gray-300 dark:border-b-white/40 ">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mb-5 text-zinc-600 dark:text-white nav-close-btn transition-all">
+             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+            <span class="mb-5">سبد خرید</span>
+         </div>
+
+        <!-- لیست کالاهای سبد خرید  ----->
+<div class="flex flex-col justify-between min-h-screen overflow-auto items-center">
+    <div>
+        <!-- کالای اولی -->
+        <div class="py-5 flex gap-x-2.5 ">
+            <div>
+                <img class="w-35 h-20" src="../public/images/products/p1.png" alt="img-p1">
+            </div>
+            <div class="flex-col justify-between">
+                <h4 class=" line-clamp-2 font-DanaMedium tracking-tightest text-5 text-zinc-700 dark:text-white">قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
+                <div>
+                    <div class="text-zinc-700 text-5 dark:text-white font-DanaBold">
+                        <span class="text-teal-600 dark:text-emerald-500 text-3"> تومان تخفیف 14500</span> 175,000<span class=" text-4">تومان</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- کالای دومی -->
+         <div class="py-5 flex gap-x-2.5 ">
+            <div>
+                <img class="w-35 h-20" src="../public/images/products/p2.png" alt="img-p2">
+            </div>
+            <div class="flex-col justify-between">
+                <h4 class=" line-clamp-2 font-DanaMedium tracking-tightest text-5 text-zinc-700 dark:text-white">قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
+                <div>
+                    <div class="text-zinc-700 text-5 dark:text-white font-DanaBold">
+                        <span class="text-teal-600 dark:text-emerald-500 text-3"> تومان تخفیف 14500</span> 175,000<span class=" text-4">تومان</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="flex justify-between mt-5">
+              <a class="w-25 h-10 flex items-center justify-center bg-teal-600 dark:bg-emerald-500 dark:hover:bg-emerald-600 hover:bg-teal-700 transition-colors rounded-xl font-DanaMedium text-4 text-white" href="#">ثبت سفارش</a>
+            <div>
+                <span class="text-gray-400 text-2 tracking-tightest font-DanaRegular">مبلغ قابل پرداخت</span>
+                 <div class="text-zinc-700 text-5 dark:text-white font-DanaBold">
+                     <span>350,000 تومان</span>
+                 </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                                         
+
+
+        <!-- بخش پایینی سبد خرید ------->
+     
     
     
     
@@ -367,7 +430,7 @@
     
     
     <!-- ZAHRA KHIVVEH -->
-    <div class=" min-h-screen flex justify-center items-center shadow-lg">
+    <!-- <div class=" min-h-screen flex justify-center items-center shadow-lg">
         <div class=" max-w-100 overflow-hidden rounded-2xl shadow-md">
             <img src="./images/24_Header-Analyze/photo_2025-11-23_01-32-13.jpg" alt="aa">
             <div class="p-5 space-y-3">
@@ -383,7 +446,7 @@
         </div>
         </div>
       
-    </div>
+    </div> -->
     <div class="invisible opacity-0 md:hidden overlay fixed bg-black/40 w-full h-full z-10 inset-0"></div>
 <script src="../public/app.js"></script>
 </body>
