@@ -11,6 +11,7 @@
 
     --shadow-normal : 0px 1px 10px rgba (0, 0, 0,.05);
 
+    --spacing-xs:480px;
     
     --font-Poppins :"Dosis-ExtraBold";
     --font-DanaBold :"Dana-Bold";
@@ -35,9 +36,29 @@
 } }
 @layer utilities{
 .bg-home-desktop{
-    background-image: url("../public/images/CoffeeShop-Files/headerBgDesktop.webp") ;
+    @apply bg-no-repeat;
+    background-image: url("../public/images/24_Header-Analyze/headerBgDesktop.png") ;
 }
 }
+@layer utilities{
+.product{
+    @apply  ;
+    background: url("../public/images/CoffeeShop-Files/body-bg.png") ;
+}
+}
+@layer utilities{
+.bg-home-mobile{
+    @apply bg-no-repeat;
+    background: url("../public/images/CoffeeShop-Files/headerBgMobile.webp") ;
+}
+}
+/*@layer base {
+  body {
+    @apply bg-no-repeat;
+    background-image: url("../public/images/CoffeeShop-Files/headerBgDesktop.webp");
+  }
+}*/
+
 @layer utilities {
   .ltr {
     direction: ltr;

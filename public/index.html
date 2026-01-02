@@ -7,14 +7,13 @@
     <link rel="stylesheet" href="output.css">
     <link rel="shortcut icon" href="./images/24_Header-Analyze/fav-icon.png" type="image/x-icon">
 </head>
-<body class="bg-body-light dark:bg-body-dark ">
+<body class="bg-body-light dark:bg-body-dark h-500">
 
     <!-- Background -->
     <!-- LOGO & MENU -->
-    <header class=" fixed top-9 left-0 right-0 hidden md:flex items-center tracking-tightest bg-black/50 w-[98%] lg:w-[90%] h-24 mx-auto px-5 lg:px-10 py-5  rounded-3xl backdrop-blur-b6">
+    <header class="z-50 fixed top-9 left-0 right-0 hidden md:flex items-center tracking-tightest bg-black/50 w-[98%] lg:w-[90%] h-24 mx-auto px-5 lg:px-10 py-5  rounded-3xl backdrop-blur-b6">
         
         <div class="flex  w-full items-center justify-between z-10">
-            <!-- <img class=" w-full z-0 bg-no-repeat" src="../public/images/24_Header-Analyze/headerBgDesktop.png" alt="main"> -->
         <nav class="flex items-center gap-x-3 lg:gap-x-9 ">
             <div class="shrink-0">
                 <img class="w-12 h-12" src="./images/24_Header-Analyze/app-logo.png" alt="logo">
@@ -233,7 +232,6 @@
 
         </div>
         <!-- بخش وسطی ساید بار -->
-        <div class="bg-home-mobile"></div>
     <ul class="flex flex-col items-start gap-6  font-DanaMedium text-6 border-b border-b-gray-300 dark:border-b-white/40 pb-8 mt-8">
         
         <li>
@@ -427,17 +425,21 @@
         <!-- بخش مین مرکزی سایت --------------------------------------------------------------->
 
         <main class="">
-            <section class="home ">
-                <div class="container min-h-screen  flex flex-col items-end">
+            <section class="relative home bg-cover h-50 xs:h-auto bg-home-desktop bg-position-[center-top]">
+                <div class="container h-full xs:aspect-2/1 md:min-h-screen flex items-center justify-end">
                     <div class="text-white ">
-                        <h1 class="font-MorabbaBold text-2xl mb-2 md:text-6xl ">قهوه عربیکا تانزانیا</h1>
+                        <h1 class="font-MorabbaBold text-2xl mb-1 md:mb-2 md:text-6xl ">قهوه عربیکا تانزانیا</h1>
                         <p class="font-MorabbaLight text-xl md:text-5xl">یک فنجان بالانس !</p>
-                        <span class="block w-25 h-px md:h-0.5 bg-orange-300 md:my-8 my-4"></span>
-                        <p class="md:max-w-115 font-DanaMedium text-xl md:text-2xl">قطعا نام آشنای عربیکا را شنیده اید، عربیکا یکی از گونه های قهوه است که در نواحی مختلف کمربند قهوه کشت میشود.</p>
+                        <span class="block md:my-8 w-25 h-px md:h-1 bg-orange-300 my-4"></span>
+                        <p class="max-w-50 md:max-w-115 font-DanaMedium text-xs md:text-2xl">قطعا نام آشنای عربیکا را شنیده اید، عربیکا یکی از گونه های قهوه است که در نواحی مختلف کمربند قهوه کشت میشود.</p>
                     </div>
                 </div>
             </section>
+            <section class="product w-full h-225 bg-no-repeat">
+                
+            </section>
          </main>
+                    
          
                                          
 
