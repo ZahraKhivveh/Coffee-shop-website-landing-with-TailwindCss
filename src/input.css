@@ -27,30 +27,52 @@
     --radius-4xl :2rem; 
 
 }
- /*@utility container{
-    @apply mx-auto px-4 lg:px-2.5;
-}*/
-@layer utilities{
+ 
+/* @layer utilities{
 .bg-home-mobile{
     background-image: url("../public/images/CoffeeShop-Files/headerBgMobile.webp") ;
-} }
+} } */
 @layer utilities{
-.bg-home-desktop{
-    @apply bg-no-repeat;
-    background-image: url("../public/images/24_Header-Analyze/headerBgDesktop.png") ;
+    .bg-home-desktop{
+        @apply bg-no-repeat;
+        background-image: url("../public/images/24_Header-Analyze/headerBgDesktop.png") ;
+    }
 }
-}
-@layer utilities{
-.product{
-    @apply  ;
-    background: url("../public/images/CoffeeShop-Files/body-bg.png") ;
-}
-}
+
 @layer utilities{
 .bg-home-mobile{
     @apply bg-no-repeat;
     background: url("../public/images/CoffeeShop-Files/headerBgMobile.webp") ;
 }
+} 
+
+@layer components {
+  .section-title {
+    @apply md:text-4xl text-xl font-MorabbaMedium text-zinc-700 dark:text-white;
+  }
+
+  .section-subtitle {
+    @apply inline-block text-lg md:text-3xl font-MorabbaLight mt-.5 md:mt-1.5 text-zinc-700 dark:text-white;
+  }
+
+  .section-link {
+    @apply flex items-center md:gap-x-1 rounded-md tracking-tightest text-base md:text-xl text-orange-300 md:hover:bg-orange-300/20 transition-colors h-11 pr-3 pl-1;
+  }
+}
+
+@layer utilities {
+  .products {
+    height: 900px;
+    background: linear-gradient(
+        rgba(243, 244, 246, 0.65),
+        rgba(243, 244, 246, 0.65)
+      ),
+      url("../public/images/CoffeeShop-Files/body-bg.png");
+  }
+
+  html.dark .products {
+    background-image: url("../public/images/CoffeeShop-Files/body-bg.png");
+  }
 }
 /*@layer base {
   body {
