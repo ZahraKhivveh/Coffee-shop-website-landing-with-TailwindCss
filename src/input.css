@@ -27,11 +27,7 @@
     --radius-4xl :2rem; 
 
 }
- 
-/* @layer utilities{
-.bg-home-mobile{
-    background-image: url("../public/images/CoffeeShop-Files/headerBgMobile.webp") ;
-} } */
+
 @layer utilities{
     .bg-home-desktop{
         @apply bg-no-repeat;
@@ -52,7 +48,7 @@
   }
 
   .section-subtitle {
-    @apply inline-block text-lg md:text-3xl font-MorabbaLight mt-.5 md:mt-1.5 text-zinc-700 dark:text-white;
+    @apply inline-block text-lg md:text-3xl font-MorabbaLight mt-1 md:mt-1.5 text-zinc-700 dark:text-white;
   }
 
   .section-link {
@@ -89,6 +85,10 @@
     direction: rtl;
   }
 }
+@utility container{
+@apply mx-auto px-4 lg:px-2.5
+}
+
 @layer base{
 @font-face {
     font-family: "Dosis-ExtraBold";
